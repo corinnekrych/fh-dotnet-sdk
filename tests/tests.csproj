@@ -76,6 +76,27 @@
     <Compile Include="..\FHSDKTestShared\SharedTest\FHSDKTest.cs">
       <Link>FHSDKTest.cs</Link>
     </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\FHSyncClientTest.cs">
+      <Link>FHSyncClientTest.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\FHSyncDatasetTest.cs">
+      <Link>FHSyncDatasetTest.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\FHSyncDatasetTests.cs">
+      <Link>FHSyncDatasetTests.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\FHSyncUtilsTest.cs">
+      <Link>FHSyncUtilsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\InMemoryDataStoreTest.cs">
+      <Link>InMemoryDataStoreTest.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\Sync\TaskModel.cs">
+      <Link>TaskModel.cs</Link>
+    </Compile>
+    <Compile Include="..\FHSDKTestShared\SharedTest\TestUtils.cs">
+      <Link>TestUtils.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

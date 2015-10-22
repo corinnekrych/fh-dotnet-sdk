@@ -9,8 +9,8 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using FHSDK;
-using FHSDK.Phone;
 using FHSDK.Sync;
+using FHSDKPortable;
 using NUnit.Framework;
 
 namespace FHSDKTestShared
@@ -66,9 +66,9 @@ namespace FHSDKTestShared
             TestUtils.DeleteFileIfExists(dataFilePath);
             TestUtils.DeleteFileIfExists(pendingFilePath);
 
-            Assert.IsFalse(File.Exists(metaDataFilePath));
-            Assert.IsFalse(File.Exists(dataFilePath));
-            Assert.IsFalse(File.Exists(pendingFilePath));
+            //Assert.IsFalse(File.Exists(metaDataFilePath));
+            //Assert.IsFalse(File.Exists(dataFilePath));
+            //Assert.IsFalse(File.Exists(pendingFilePath));
 
             syncClient = FHSyncClient.GetInstance();
             syncClient.Initialise(syncConfig);
@@ -107,7 +107,7 @@ namespace FHSDKTestShared
 
             syncClient.ForceSync<TaskModel>(DATASET_ID);
 
-            Thread.Sleep(2000);
+            //Thread.Sleep(2000);
 
             var cloudRes = await FH.Cloud(string.Format("/syncTest/{0}", DATASET_ID), "GET", null, null);
             Assert.IsNull(cloudRes.Error);

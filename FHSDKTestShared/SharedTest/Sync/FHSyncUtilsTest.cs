@@ -8,8 +8,7 @@ using FHSDK.Services;
 using FHSDK.Services.Hash;
 using FHSDK.Sync;
 using Newtonsoft.Json.Linq;
-using FHSDK.Phone;
-
+using FHSDKPortable;
 using NUnit.Framework;
 
 namespace FHSDKTestShared

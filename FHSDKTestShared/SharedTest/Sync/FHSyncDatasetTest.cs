@@ -11,7 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using FHSDK;
 using FHSDK.Sync;
-using FHSDK.Phone;
+using FHSDKPortable;
 using NUnit.Framework;
 
 namespace FHSDKTestShared
@@ -62,9 +62,9 @@ namespace FHSDKTestShared
             TestUtils.DeleteFileIfExists(_dataFilePath);
             TestUtils.DeleteFileIfExists(_pendingFilePath);
 
-            Assert.IsFalse(File.Exists(_metaDataFilePath));
-            Assert.IsFalse(File.Exists(_dataFilePath));
-            Assert.IsFalse(File.Exists(_pendingFilePath));
+            //Assert.IsFalse(File.Exists(_metaDataFilePath));
+            //Assert.IsFalse(File.Exists(_dataFilePath));
+            //Assert.IsFalse(File.Exists(_pendingFilePath));
 
 
             var tasksDataset = FHSyncDataset<TaskModel>.Build<TaskModel>(DatasetId, syncConfig, null, null);
@@ -164,13 +164,13 @@ namespace FHSDKTestShared
             Debug.WriteLine("Got response for creating new record: {0}", createRecordReq.RawResponse);
             Assert.IsNull(createRecordReq.Error);
 
-            Thread.Sleep(1500);
+            //Thread.Sleep(1500);
             Assert.IsTrue(tasksDataset.ShouldSync());
 
             //run a sync loop
             await tasksDataset.StartSyncLoop();
 
-            Thread.Sleep(9000);
+            //Thread.Sleep(9000);
 
             await tasksDataset.StartSyncLoop();
 
