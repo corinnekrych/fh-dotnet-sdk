@@ -7,16 +7,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using FHSDK;
 using Newtonsoft.Json.Linq;
-#if WINDOWS_PHONE
-using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
-using Test = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestMethodAttribute;
-using SetUp = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestInitializeAttribute;
-using TearDown = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute;
-using FHSDK.Phone;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
-#else
+using FHSDKPortable;
 using NUnit.Framework;
-#endif
 
 namespace FHSDKTestShared
 {
@@ -37,11 +29,7 @@ namespace FHSDKTestShared
         }
 
         [Test]
-#if WINDOWS_PHONE
-        public async Task TestAct()
-#else
         public async void TestAct()
-        #endif
         {
             var data = new Dictionary<string, string>();
             data["test"] = "test";
@@ -60,11 +48,7 @@ namespace FHSDKTestShared
         }
 
         [Test]
-#if WINDOWS_PHONE
-        public async Task TestCloud()
-#else
         public async void TestCloud()
-        #endif
         {
             await TestCloud("GET");
             await TestCloud("POST");

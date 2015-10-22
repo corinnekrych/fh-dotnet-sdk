@@ -3,12 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json.Linq;
-#if WINDOWS_PHONE
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
-
-#else
 using NUnit.Framework;
-#endif
 
 namespace FHSDKTestShared
 {

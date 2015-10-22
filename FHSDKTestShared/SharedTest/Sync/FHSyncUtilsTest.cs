@@ -8,17 +8,9 @@ using FHSDK.Services;
 using FHSDK.Services.Hash;
 using FHSDK.Sync;
 using Newtonsoft.Json.Linq;
-#if WINDOWS_PHONE
-using TestFixture = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestClassAttribute;
-using Test = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestMethodAttribute;
-using SetUp = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestInitializeAttribute;
-using TearDown = Microsoft.VisualStudio.TestPlatform.UnitTestFramework.TestCleanupAttribute;
 using FHSDK.Phone;
-using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
 
-#else
 using NUnit.Framework;
-#endif
 
 namespace FHSDKTestShared
 {
