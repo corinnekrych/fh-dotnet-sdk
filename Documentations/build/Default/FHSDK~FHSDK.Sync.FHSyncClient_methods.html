@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+    <meta http-equiv="X-UA-Compatible" value="IE=9" />
+
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Literal" condition="helpversion:value=3" value="<meta name=""Microsoft.Help.SelfBranded"" content=""true"" />" --><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="PageItemTitle" format="<title>%%PageItemTitle%% $$Methods$$</title>" --><title>FHSyncClient Class Methods</title><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PageItemTitle" format="<meta name=""Title"" content=""%%PageItemTitle%% $$Methods$$""/>" --><meta name="Title" content="FHSyncClient Class Methods"/><!--DXMETADATA end-->    
+    
+
+    <!--DXMETADATA start type="PackageLink" packagename="jquery" filetype="script" firstlinkattributes="id=""mshs_support_script"""--><script src="template/packages/jquery/script/chm.mshc/jquery-1.7.2.min.js" type="text/javascript" id="mshs_support_script"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="script"--><script src="template/packages/jquery-ui/script/chm.mshc/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="jquery-ui" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/jquery-ui/css/chm.mshc/jquery-ui-1.8.18.custom.css"></link><!--DXMETADATA end-->
+	
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-dotnet" filetype="css"--><link rel="stylesheet" type="text/css" href="template/packages/plugins-dotnet/css/chm.mshc/jquery-plugins.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-dotnet" filetype="css" firstlinkattributes=" data-mshv2-stylesheet=""/template/packages/core-dotnet/dx.net.mshv2.css"" data-mshv1-stylesheet=""/template/packages/core-dotnet/dx.net.mshv1.css"" data-responsive-mobile=""template/packages/core-dotnet/dx.net.mobile.css"" data-responsive-tablet=""template/packages/core-dotnet/dx.net.tablet.css"""--><link rel="stylesheet" type="text/css" href="template/packages/core-dotnet/css/dx.net.css"  data-mshv2-stylesheet="/template/packages/core-dotnet/dx.net.mshv2.css" data-mshv1-stylesheet="/template/packages/core-dotnet/dx.net.mshv1.css" data-responsive-mobile="template/packages/core-dotnet/dx.net.mobile.css" data-responsive-tablet="template/packages/core-dotnet/dx.net.tablet.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="plugins-dotnet" filetype="script"--><script src="template/packages/plugins-dotnet/script/chm.mshc/jquery-plugins.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    <!--DXMETADATA start type="PackageLink" packagename="core-dotnet" filetype="script"--><script src="template/packages/core-dotnet/script/dx.net.min.js" type="text/javascript"></script><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="TopicId" format="<meta name=""Microsoft.Help.Id"" content=""%%TopicId%%""/>" --><meta name="Microsoft.Help.Id" content="FHSDK~FHSDK.Sync.FHSyncClient_methods"/><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Synopsis" StripHtmlTags="True" MaxLength="250" format="<meta name=""Description"" content=""%%Synopsis%%"" />"--><meta name="Description" content="
+                The client part of the FH Sync Framework.
+                To use the sync framework, you just need to create a data model that implements the IFHSyncModel interface, and let
+                the sync client manage that data model for " /><!--DXMETADATA end-->
+    <!--DXMETADATA start type="TocParentId" format="<meta name=""Microsoft.Help.TocParent"" content=""%%TocParentId%%""/>" --><meta name="Microsoft.Help.TocParent" content="FHSDK~FHSDK.Sync.FHSyncClient"/><!--DXMETADATA end-->
+    <meta name="Microsoft.Help.ContentType" content="Reference" /><meta name="Microsoft.Help.TocOrder" content="30"/>
+    <!--DXMETADATA start type="MshvKeywords" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="MshvMetaTags" condition="helpversion:value=3" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.Locale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Help3CatalogLocale" condition="helpversion:value=3" format="<meta name=""Microsoft.Help.TopicLocale"" content=""%%Help3CatalogLocale%%"" />"--><!--DXMETADATA end-->
+    
+    <!--DXMETADATA start type="Stylesheets" --><link rel="stylesheet" type="text/css" href="stylesheets/customstyles.css"></link><!--DXMETADATA end-->
+    <!--DXMETADATA start type="Scripts" --><script src="script/swfobject.js" type="text/javascript"></script><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="DesignTime"--><!--DXMETADATA end-->
+
+    <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_PROPERTIES" --><!--DXMETADATA end -->
+
+    <!--DXMETADATA start type="CustomHeadContent" --><!--DXMETADATA end-->
+</head>
+
+<body>
+    <div id="i-before-header-content" class="i-before-header-content">
+        
+    </div>
+    <div id="i-header-content" class="i-header-content">
+        <!--DXMETADATA start type="LogoImage" --><!--DXMETADATA end-->
+            <div class="i-project-title"><!--DXMETADATA start type="ProjectTitle" -->FHSDK<!--DXMETADATA end--></div>
+        <div class="i-page-title"><div class="i-page-title-text"><!--DXMETADATA start type="PageItemTitle" format="%%PageItemTitle%% $$Methods$$" -->FHSyncClient Class Methods<!--DXMETADATA end--></div></div>
+    </div>
+    <div id="i-after-header-content" class="i-after-header-content">
+        <!-- Spacing --> <span class="i-toggle-all-sections i-function-link">
+                <label class="i-collapse-all"><!--DXMETADATA start type="Phrase" name="COLLAPSE_ALL" -->Collapse All<!--DXMETADATA end--></label>
+                <label class="i-expand-all" style="display: none;"><!--DXMETADATA start type="Phrase" name="EXPAND_ALL" -->Expand All<!--DXMETADATA end--></label>
+            </span><!--DXMETADATA start type="Literal" condition="communityenabled" value="%%scrap:name=_COMMUNITY_DROPDOWN%%" --><!--DXMETADATA end --><span id="" class="i-popup-link" data-popup-contentsource="#i-member-filter-checkboxes" data-popup-title='<!--DXMETADATA start type="Phrase" name="Members_Filter" -->Members Options<!--DXMETADATA end -->'>
+                        <label class="i-members-all">
+                            <!--DXMETADATA start type="Phrase" name="MEMBERS_FILTER_SHOW_ALL" -->Members Options: Show All<!--DXMETADATA end -->
+                        </label>
+                        <label class="i-members-filtered" style="display: none;">
+                            <!--DXMETADATA start type="Phrase" name="MEMBERS_FILTER_FILTERED" -->Members Options: Filtered<!--DXMETADATA end -->
+                        </label>
+                    </span>
+                    <div class="i-popup-content" id="i-member-filter-checkboxes">
+                        <input id="i-inherited-checkbox" type="checkbox" class="i-toggle-filter-checkbox" checked="true" data-toggleclass="i-inherited-member">
+                        <label class="i-members-filter" for="i-inherited-checkbox">
+                            <!--DXMETADATA start type="Phrase" name="MEMBERS_FILTER_INHERITED" -->Include Inherited Members<!--DXMETADATA end -->
+                        </label>
+                        <br />
+                        <!--DXMETADATA start type="IncludeProtectedOrFriendMembers" format="<input id=""i-protected-checkbox"" type=""checkbox"" class=""i-toggle-filter-checkbox"" checked=""true"" data-toggleclass=""ProtectedMember"" />" --><input id="i-protected-checkbox" type="checkbox" class="i-toggle-filter-checkbox" checked="true" data-toggleclass="ProtectedMember" /><!--DXMETADATA end -->
+                        <!--DXMETADATA start type="IncludeProtectedOrFriendMembers" format="<label class=""i-members-filter"" for=""i-protected-checkbox"">$$MEMBERS_FILTER_PROTECTED$$</label><br />" --><label class="i-members-filter" for="i-protected-checkbox">Include Protected Members</label><br /><!--DXMETADATA end -->
+                    </div>
+        <!--DXMETADATA start type="IsWebOutputRootPageLinkEnabled" format="<a href='#' class="i-page-link" class="i-view-in-frame-link" title='$$VIEW_WITH_NAVIGATION_TOOLS_TIP$$' style='display: none' data-root-page='%%WebOutputRootPage%%%%OutputFileExtension%%' target='_top'>$$VIEW_WITH_NAVIGATION_TOOLS_TEXT$$</a>" --><!--DXMETADATA end-->
+    </div>
+    <!--DXMETADATA start type="Breadcrumbs" scrap="_BREADCRUMBS" --><div class="i-breadcrumbs-container"><table><tr><td>
+<a href="FHSDK~FHSDK.Sync_namespace.html">FHSDK.Sync Namespace</a>
+ : FHSyncClient Class</td></tr></table></div><!--DXMETADATA end -->
+    
+    
+    <div id="i-body-content" class="i-body-content">
+        <!--DXMETADATA start type="Scrap" name="_MEMBERS_LINK" format="<p>%%scrap%%</p>" --><p>For a list of all members of this type, see <a href="FHSDK~FHSDK.Sync.FHSyncClient_members.html">FHSyncClient members</a>.</p><!--DXMETADATA end -->
+
+            <a name="MethodsBookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=public" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=publicMethods,caption=$$Public$$ $$Methods$$%%%%filtereditemlist%%<a href="#top">$$Top$$</a></div>" --><div class="i-section-heading" id="i-publicMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Public Methods</span></div><div id="i-publicMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Create.html">Create&lt;T&gt;</A></td><td class="i-member-description">
+                Create a new data record with the specified datasetId and an instance of the model.
+                The new data record will be synced to the cloud automatically.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Delete.html">Delete&lt;T&gt;</A></td><td class="i-member-description">
+                Delete the data record with the specified datasetId and model.
+                The deletion will be applied to local data immediately and sync with cloud when possible.
+                In case of collision, the collision will be recorded and the local change will be reverted to match the cloud
+                entry.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~ForceSync.html">ForceSync&lt;T&gt;</A></td><td class="i-member-description">
+                Invoke a sync loop almost immediately.
+                It will guarantee a sync loop will run in the next 500 milliseconds (even the data model has set to stop sync - but
+                not if StopAll is called.).
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"><IMG alt="static (Shared in Visual Basic)" src="template/packages/core-dotnet/images/static.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~GetInstance.html">GetInstance</A></td><td class="i-member-description">
+                Get the singleton instance of the FHSyncClient
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Initialise.html">Initialise</A></td><td class="i-member-description">
+                Set the global FHSyncConfig for all the datasets.
+                This will be used for all the dataset if no instance of FHSyncConfig is provided when managing a sync data model.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~List.html">List&lt;T&gt;</A></td><td class="i-member-description">
+                List the data records for the specified datasetId.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Manage.html">Manage&lt;T&gt;</A></td><td class="i-member-description">
+                Manage the specified sync data model that implements the IFHSyncModel.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Read.html">Read&lt;T&gt;</A></td><td class="i-member-description">
+                Read the data records with the specified datasetId and uid.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Start.html">Start&lt;T&gt;</A></td><td class="i-member-description">
+                Start syncing the specified dataset with the cloud if possible
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~StartAll.html">StartAll</A></td><td class="i-member-description">
+                Start syncing all local data models.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Stop.html">Stop&lt;T&gt;</A></td><td class="i-member-description">
+                Stop syncing the specified dataset with the cloud. All the changes will be saved locally only.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~StopAll.html">StopAll</A></td><td class="i-member-description">
+                Stop syncing all local data models.
+             &nbsp;</td></tr>
+<tr><td class="i-image"><img alt="Public Method" src="template/packages/core-dotnet/images/publicMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~Update.html">Update&lt;T&gt;</A></td><td class="i-member-description">
+                Update the data record with the specified datasetId and model.
+                The changes of the data record will be synced to the cloud automatically.
+                In case of collision, the collision will be recorded and the local change will be reverted to match the cloud
+                entry.
+             &nbsp;</td></tr>
+</table><a href="#top">Top</a></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=protected+protected friend+friend" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=protectedMethods,caption=$$Protected$$ $$Methods$$%%%%filtereditemlist%%<a href="#top">$$Top$$</a></div>" --><div class="i-section-heading" id="i-protectedMethods-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">Protected Methods</span></div><div id="i-protectedMethods-section-content" class="i-section-content"><table class="i-filtered-item-list"><tr><th>&nbsp;</th><th>Name</th><th>Description</th></tr>
+<tr><td class="i-image"><img alt="Protected Method" src="template/packages/core-dotnet/images/protectedMethod.png"></td><td class='i-member-link'><A HREF="FHSDK~FHSDK.Sync.FHSyncClient~OnSyncNotification.html">OnSyncNotification</A></td><td class="i-member-description">
+                Send the event notification
+             &nbsp;</td></tr>
+</table><a href="#top">Top</a></div><!--DXMETADATA end -->
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=private" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=privateMethods,caption=$$Private$$ $$Methods$$%%%%filtereditemlist%%<a href="#top">$$Top$$</a></div>" --><!--DXMETADATA end -->
+
+            <!--DXMETADATA start type="FilteredItemList" condition="content:content=""%%IncludeExtensionMethods%%"",operator=""="",value=""True""" scrap="EXTENSIONMETHOD_LIST" namespace="method" source="Item" filter="scope=public,type=extension" format="%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=extensionmethods,caption=$$Extension_Methods$$%%%%filtereditemlist%%<a href="#top">$$Top$$</a></div>" --><!--DXMETADATA end -->
+
+            <a name="seealsobookmark"></a>
+            <!--DXMETADATA start type="FilteredItemList" scrap="CATEGORIZED_LINKS" namespace="linkcategory" source="Item" filter="type=members" NoHeader="True" NoFooter="True" format="%%replaceinquotes:value=false%%%%scrap:name=_COLLAPSIBLE_HEADER,idprefix=seealso,caption=""$$See_Also$$%%designlist:tagidentifier=##SEEALSO,itemtype=See Also%%""%%%%filtereditemlist%%</div>"--><div class="i-section-heading" id="i-seealso-section-heading"><span class="i-section-heading-icon"><!-- --></span><span class="i-section-heading-text">See Also</span></div><div id="i-seealso-section-content" class="i-section-content"><h4 class="i-sub-heading">Reference</h4><p><a href="FHSDK~FHSDK.Sync.FHSyncClient.html">FHSyncClient Class</a>
+<br/><a href="FHSDK~FHSDK.Sync_namespace.html">FHSDK.Sync Namespace</a>
+</p>
+</div><!--DXMETADATA end-->
+        
+    </div>
+    <div id="i-footer-content" class="i-footer-content">
+        <!--DXMETADATA start type="Scrap" condition="communityenabled" name="_COMMUNITY_FOOTER" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="CopyrightNotice" format="<p>&nbsp;</p><p>&nbsp;</p><hr style=""height: 1px"" /><p>%%variable%%</p>" --><!--DXMETADATA end -->
+<!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><a href="mailto:support@company.com?subject=Documentation Feedback: FHSDK~FHSDK.Sync.FHSyncClient.html">Send Feedback</a><!--DXMETADATA end-->
+    </div>
+    
+
+    <!--DXMETADATA start type="IsNew" format="<script type=""text/javascript"">setIsNew = true;</script>" --><!--DXMETADATA end-->
+    <!--DXMETADATA start type="IsTemplateFileFeatureEnabled" name="Responsive" format="<script type=""text/javascript"">setIsResponsiveEnabled = true;</script>" --><!--DXMETADATA end-->
+    <script type="text/javascript">
+        $(function() {
+            var documentInstance = new Innovasys.Content.Document(document.body);
+            documentInstance.isNew = !(typeof setIsNew === "undefined");
+            documentInstance.isResponsiveEnabled = !(typeof setIsResponsiveEnabled === "undefined");
+            documentInstance.load();
+        });
+    </script>
+</body>
+</html>
