@@ -29,7 +29,8 @@ XCOPY FHSDKPortable\*.cs Dist\src /sy
 XCOPY FHXamarinAndroidSDK\*.cs Dist\src /sy
 XCOPY FHXamarinIOSSDK\*.cs Dist\src /sy
 
-REM COPY /B xamarin\FHXamarinIOSSDK\bin\Debug\FHSDK.dll Dist\lib\xamarinios10\
-REM COPY /B xamarin\FHXamarinIOSSDK\bin\Debug\FHSDK.xml Dist\lib\xamarinios10\
-REM COPY /B xamarin\FHXamarinIOSSDK\bin\Debug\FHXamarinIOSSDK.dll Dist\lib\xamarinios10\
-REM COPY /B xamarin\FHXamarinIOSSDK\bin\Debug\FHXamarinIOSSDK.xml Dist\lib\xamarinios10\
+REM uncommnet if you have xamarin agent to ssh macOS machine and run build, otherwise use copyIOSLibs.sh on macOS 
+REM COPY /B FHXamarinIOSSDK\bin\Debug\FHSDK.dll Dist\lib\xamarinios10\
+REM COPY /B FHXamarinIOSSDK\bin\Debug\FHSDK.xml Dist\lib\xamarinios10\
+REM COPY /B FHXamarinIOSSDK\bin\Debug\FHXamarinIOSSDK.dll Dist\lib\xamarinios10\
+REM COPY /B FHXamarinIOSSDK\bin\Debug\FHXamarinIOSSDK.xml Dist\lib\xamarinios10\

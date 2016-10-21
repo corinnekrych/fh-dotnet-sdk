@@ -46,7 +46,11 @@ After updating the nuspec with the right version you can pack the release and up
 
 ```bash
 nuget pack FHSDK.nuspec -Symbols
-nuget push FH.SDK.<version>.nupkg
+nuget push FH.SDK.<version>.nupkg 
+```
+Note: if you have NuGet 3.4.2+, you need to specify source:
+```bash
+nuget push FH.SDK.<version>.nupkg -source https://www.nuget.org/api/v2/package
 ```
 
 6) Merge the branch
